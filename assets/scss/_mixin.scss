@@ -1,0 +1,30 @@
+@mixin flex1 ($content,$items) {
+    display: flex;
+    justify-content: $content;
+    align-items: $items;
+}
+// @mixin zeynab ($color,$border,$br,$pad) {
+//     color:$color;
+//     border:$border;
+//     border-radius:$br;
+//     padding:$pad;
+// }
+@mixin img ($wid,$heit,$br,$ob) {
+    width: $wid;
+    height:$heit;
+    border-radius:$br;
+    object-fit:$ob;
+}
+@mixin button ($bg,$br,$pad,$mb) {
+    background-color:$bg;
+        border-radius: $br;
+        padding: $pad;
+        margin-bottom: $mb;
+}
+@mixin bor1000($bor,$br,$items,$content) {
+    border: $bor;
+    border-radius: $br;
+   display: flex;
+   align-items: $items;
+   justify-content: $content;
+}
