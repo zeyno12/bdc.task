@@ -99,7 +99,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
+  width: 100%;
   font-size: small;
 }
 
@@ -119,6 +119,7 @@
 
 #header .righthead .foothead .textfoot {
   margin-left: 20px;
+  width: 100%;
 }
 
 #header .righthead .foothead p {
@@ -145,7 +146,6 @@
 }
 
 #main1 .bigmain1 {
-  padding: 8px 22px 16px 30px;
   font-size: 45px;
   font-weight: 600;
 }
@@ -154,21 +154,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-top: 30px;
 }
 
 #main1 .icontext p {
   margin: 0;
   font-size: large;
+  padding-left: 10px;
 }
 
 #main2 .bigmain2 {
-  padding: 30px 22px 16px 30px;
   font-size: 45px;
   font-weight: 600;
 }
@@ -179,16 +177,7 @@
   border-radius: 20px;
   border: none;
   padding: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  height: 150px;
 }
 
 #main2 .blackcon .list ul li {
@@ -204,5 +193,447 @@
   #main2 .blackcon {
     margin-bottom: 20px;
   }
+}
+
+#main3 .sa {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#main3 .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#main3 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#main3 .swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main4 .salam {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#main4 .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#main4 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#main4 .swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main5 {
+  margin-top: 4rem;
+}
+
+#main5 .confidan {
+  background-color: #262626;
+  color: white;
+  border-radius: 16px;
+  padding: 16px 8px;
+}
+
+#main5 .confidan .flex5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main5 .confidan .flex5 .icon5 {
+  background-color: #FFC700;
+  border-radius: 50%;
+  padding: 12px 14px;
+  color: black;
+}
+
+#main5 .confidan .flex5 .text5 p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#main5 .confidan .flex5 .text5 .gray {
+  color: gray;
+}
+
+#main5 .confidan .confidantext {
+  font-size: small;
+  margin-top: 1rem;
+}
+
+#main5 .confidan .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#main5 .confidan .swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main6 .zeynuw {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#main6 .container6 .img6 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main8 {
+  margin: 3%;
+  background-color: #262626;
+  border-radius: 50px;
+}
+
+#main8 .img8 {
+  padding: 8px;
+}
+
+#main8 .img8 img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 80%;
+}
+
+#main8 .text8 {
+  width: 80%;
+  color: #fff;
+}
+
+#main8 .text8 .big {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#main8 .text8 p {
+  font-size: small;
+}
+
+#main8 .text8 button {
+  background-color: #FFC700;
+  border: none;
+  border-radius: 50px;
+  padding: 4px 26px;
+}
+
+#main8 .text8 button span {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main8 .text8 .big {
+    font-size: x-large;
+    margin: auto;
+    text-align: center;
+  }
+  #main8 .text8 p {
+    text-align: center;
+  }
+  #main8 .text8 button {
+    width: 215px;
+    margin: 15px;
+  }
+}
+
+#main9 .text9 {
+  margin-left: 60px;
+  width: 40%;
+  font-size: larger;
+  margin-top: 3rem;
+}
+
+#main9 .text9 .big9 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main9 .text9 {
+    text-align: center;
+    margin: auto;
+  }
+  #main9 .text9 .big9 {
+    font-size: x-large;
+  }
+  #main9 .text9 p {
+    font-size: smaller;
+  }
+}
+
+#main9 .img9 img {
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main9 .img9 {
+    margin-bottom: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main9 .img9 img {
+    width: 60%;
+  }
+}
+
+footer {
+  background-color: #262626;
+  padding: 3%;
+  margin-top: 8rem;
+}
+
+#form {
+  margin-top: 4rem;
+  background-color: #F3F3F3;
+  border-radius: 50px;
+  padding: 12px;
+}
+
+#form .lefttext {
+  width: 50%;
+  font-size: large;
+}
+
+#form .lefttext .bold {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #form .lefttext {
+    margin: auto;
+  }
+  #form .lefttext p {
+    text-align: center;
+    font-size: smaller;
+  }
+  #form .lefttext .bold {
+    font-size: x-large;
+  }
+}
+
+#form .rightform form {
+  margin-top: 2rem;
+}
+
+#form .rightform form input {
+  width: 80%;
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #form .rightform form input {
+    width: 100%;
+  }
+}
+
+#form .rightform form .uzun {
+  height: 120px;
+}
+
+#form .rightform .end {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#form .rightform .end button {
+  background-color: #FFC700;
+  border: none;
+  padding: 6px 60px;
+  border-radius: 50px;
+}
+
+#form .rightform .end button span {
+  font-weight: 700;
+}
+
+#form .rightform .end p {
+  font-size: 8px;
+  width: 50%;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #form .rightform .end button {
+    margin: 10px;
+  }
+  #form .rightform .end p {
+    width: 110px;
+  }
+}
+
+#listfooter {
+  color: white;
+  margin-top: 5rem;
+  border-bottom: 1px solid white;
+}
+
+#listfooter li {
+  list-style: none;
+}
+
+#listfooter .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+#listfooter .phone p {
+  margin: 0;
+}
+
+#listfooter .adres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #listfooter .adres .iconad svg {
+    margin-right: 15px;
+  }
+}
+
+#listfooter .icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+  padding: 0;
+}
+
+#listfooter .ul1, #listfooter .ul2 {
+  font-size: 22px;
+}
+
+#endfoot {
+  margin: auto;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#endfoot p {
+  color: white;
+  margin-top: 1rem;
+  font-size: small;
 }
 /*# sourceMappingURL=style.css.map */
