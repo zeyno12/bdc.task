@@ -52,3 +52,17 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  const burger=document.querySelector(".bi-menu-down");
+  if(burger){
+    burger.addEventListener("click", function () {
+        var mobilnav = document.querySelector("#mobilnav");
+        if (mobilnav.style.transform == "translateX(350px)") {
+          mobilnav.style.transform = "translateX(0px)";
+        }
+        else if (mobilnav.style.transform == "translateX(0px)") {
+          mobilnav.style.transform = "translateX(350px)";
+        }
+      })
+  }
+  console.log(burger);

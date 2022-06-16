@@ -2,6 +2,14 @@
   padding: 2%;
 }
 
+#navbar .burger svg {
+  display: none;
+}
+
+#navbar .lists {
+  overflow-x: hidden;
+}
+
 #navbar .lists ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,8 +54,19 @@
 }
 
 @media screen and (min-width: 390px) and (max-width: 414px) {
+  #navbar .burger svg {
+    display: block;
+  }
   #navbar .lists ul {
-    display: none;
+    display: block;
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+    -webkit-transition: 0.3 ease-in-out;
+    transition: 0.3 ease-in-out;
+    position: relative;
+  }
+  #navbar .lists ul li {
+    position: absolute;
   }
   #navbar .logo img {
     padding: 10px;
@@ -281,7 +300,7 @@
 }
 
 #main5 .confidan .flex5 .icon5 {
-  background-color: #FFC700;
+  background-color: #ffc700;
   border-radius: 50%;
   padding: 12px 14px;
   color: black;
@@ -608,7 +627,8 @@ footer {
   padding: 0;
 }
 
-#listfooter .ul1, #listfooter .ul2 {
+#listfooter .ul1,
+#listfooter .ul2 {
   font-size: 22px;
 }
 
