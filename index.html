@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/scss/style.css">
     <title>Document</title>
@@ -29,12 +30,21 @@
                     <li>Центр карьеры</li>
                     <li>Студенты</li>
                     <li>Контакты</li>
-                    <p class="az">AZ</p>
-                    <p class="sari"><svg width="14" height="16" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <form action="" class="az">
+                        <select name="" id="">
+                            <option value="">AZ</option>
+                            <option value="">EN</option>
+                        </select>
+                    </form>
+
+                    <div class="sari" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg width="14" height="16" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 21C0 18.8783 0.842855 16.8434 2.34315 15.3431C3.84344 13.8429 5.87827 13 8 13C10.1217 13 12.1566 13.8429 13.6569 15.3431C15.1571 16.8434 16 18.8783 16 21H0ZM8 12C4.685 12 2 9.315 2 6C2 2.685 4.685 0 8 0C11.315 0 14 2.685 14 6C14 9.315 11.315 12 8 12Z" fill="#262626"/>
-                        </svg></p>
+                        </svg>
+                    </div>
                 </ul>
                 </div>
+
                 </div>
                 <div class="burger">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-down" viewBox="0 0 16 16">
@@ -44,6 +54,59 @@
             </div>
             
         </div>
+        </section>
+        <section id="modal-cont">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <div class="container">
+            <div class="title">
+                <h2>Регистрация</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modalcon">  
+                       <form action="#">
+                        <input type="text" placeholder="Имя и Фамилия"> <br>
+                        <input type="email" name="name" id="name" placeholder="Электронная почта"> <br>
+                        <input type="password" name="name" id="name" placeholder="Поставьте пароль"> <br>
+                        <div class="eye">
+                            <svg width="16" height="16" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.181152 9C1.12115 3.88 5.60815 0 11.0002 0C16.3922 0 20.8782 3.88 21.8192 9C20.8792 14.12 16.3922 18 11.0002 18C5.60815 18 1.12215 14.12 0.181152 9ZM11.0002 14C12.3262 14 13.598 13.4732 14.5357 12.5355C15.4734 11.5979 16.0002 10.3261 16.0002 9C16.0002 7.67392 15.4734 6.40215 14.5357 5.46447C13.598 4.52678 12.3262 4 11.0002 4C9.67407 4 8.4023 4.52678 7.46462 5.46447C6.52694 6.40215 6.00015 7.67392 6.00015 9C6.00015 10.3261 6.52694 11.5979 7.46462 12.5355C8.4023 13.4732 9.67407 14 11.0002 14ZM11.0002 12C10.2045 12 9.44144 11.6839 8.87883 11.1213C8.31622 10.5587 8.00015 9.79565 8.00015 9C8.00015 8.20435 8.31622 7.44129 8.87883 6.87868C9.44144 6.31607 10.2045 6 11.0002 6C11.7958 6 12.5589 6.31607 13.1215 6.87868C13.6841 7.44129 14.0002 8.20435 14.0002 9C14.0002 9.79565 13.6841 10.5587 13.1215 11.1213C12.5589 11.6839 11.7958 12 11.0002 12Z" fill="#262626"/>
+                                </svg>
+                        </div>
+                       </form> 
+                       <div class="buttonsmodal">
+                        <div class="button-1111">   
+                            <button><b> Создать аккаунт</b> </button>
+                        </div>
+                        <div class="button-1112">   
+                            <button><b> Созадть с</b></button>
+                        </div>
+                       </div>
+                       <div class="google">
+                        <svg width="25" height="25" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.48267 12.8567C4.42402 8.99089 7.4022 5.74118 11.0843 3.47075C14.7665 1.20031 19.0075 -0.00137692 23.3333 -1.41009e-05C29.6217 -1.41009e-05 34.9043 2.30999 38.9433 6.07832L32.2537 12.7703C29.834 10.458 26.7587 9.27965 23.3333 9.27965C17.255 9.27965 12.11 13.3863 10.2783 18.9C9.81167 20.3 9.54567 21.7933 9.54567 23.3333C9.54567 24.8733 9.81167 26.3667 10.2783 27.7667C12.1123 33.2826 17.255 37.387 23.3333 37.387C26.4717 37.387 29.1433 36.5587 31.234 35.1587C32.446 34.3607 33.4836 33.3252 34.2841 32.1148C35.0846 30.9044 35.6314 29.5443 35.8913 28.1167H23.3333V19.0913H45.3087C45.584 20.6173 45.7333 22.2087 45.7333 23.863C45.7333 30.9703 43.19 36.953 38.7753 41.013C34.916 44.5783 29.6333 46.6666 23.3333 46.6666C20.2688 46.6679 17.2341 46.0652 14.4026 44.893C11.5711 43.7208 8.99838 42.0022 6.83144 39.8352C4.6645 37.6683 2.94582 35.0955 1.77365 32.264C0.601472 29.4326 -0.00122468 26.3978 1.86833e-06 23.3333C1.86833e-06 19.5673 0.900668 16.0067 2.48267 12.8567Z" fill="#262626"/>
+                            </svg>
+                    </div>
+                       <div class="modaltext"><p>Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования Платформой</p></div>
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>           
         </section>
     </nav>
     <header>
@@ -538,7 +601,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-3"></div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mt-4">
                  <div class="container6">
                 <div class="img6">
                     <img src="images/Rectangle 14 (1).png" alt="">
@@ -554,7 +617,7 @@
                 </div>
                  </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mt-4">
                     <div class="container6">
                    <div class="img6">
                        <img src="images/Rectangle 15 (1).png" alt="">

@@ -2,12 +2,15 @@
   padding: 2%;
 }
 
-#navbar .burger svg {
-  display: none;
+@media (max-widht: 576px) {
+  #navbar {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
-#navbar .lists {
-  overflow-x: hidden;
+#navbar .burger svg {
+  display: none;
 }
 
 #navbar .lists ul {
@@ -32,12 +35,6 @@
   cursor: pointer;
 }
 
-#navbar .lists ul .az {
-  background: #F3F3F3;
-  border-radius: 35px;
-  padding: 0.7% 2%;
-}
-
 #navbar .lists ul .sari {
   border-radius: 50%;
   background: #FFC700;
@@ -53,20 +50,44 @@
           align-items: center;
 }
 
+#navbar .lists .az select {
+  border: none;
+  background-color: #F3F3F3;
+  border-radius: 5px;
+  padding: 2px;
+}
+
 @media screen and (min-width: 390px) and (max-width: 414px) {
   #navbar .burger svg {
     display: block;
   }
-  #navbar .lists ul {
-    display: block;
-    -webkit-transform: translateX(350px);
-            transform: translateX(350px);
+  #navbar .lists {
+    position: absolute;
+    width: 100%;
+    top: 88px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
     -webkit-transition: 0.3 ease-in-out;
     transition: 0.3 ease-in-out;
-    position: relative;
+  }
+  #navbar .lists ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #navbar .lists ul li {
-    position: absolute;
+    padding: 12px 0px;
+  }
+  #navbar .lists .az select {
+    margin: 12px 0px;
   }
   #navbar .logo img {
     padding: 10px;
@@ -80,6 +101,75 @@
   #navbar .logo img {
     padding: 10px;
   }
+}
+
+#modal-cont .modal-content {
+  background-color: whitesmoke;
+}
+
+#modal-cont .modal-content .title {
+  text-align: center;
+}
+
+#modal-cont .modal-content .modalcon {
+  position: relative;
+}
+
+#modal-cont .modal-content .modalcon form input {
+  width: 100%;
+  padding: 8px 4px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  border: none;
+  background-color: #fff;
+}
+
+#modal-cont .modal-content .modalcon .modaltext p {
+  font-size: 12px;
+  text-align: center;
+}
+
+#modal-cont .modal-content .modalcon .buttonsmodal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#modal-cont .modal-content .modalcon .buttonsmodal .button-1111 button {
+  border: none;
+  background-color: #FFC700;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+
+#modal-cont .modal-content .modalcon .buttonsmodal .button-1112 button {
+  border: 1px solid;
+  background-color: inherit;
+  padding: 15px 25px;
+  border-radius: 30px;
+  padding-right: 55px;
+}
+
+#modal-cont .modal-content .modalcon .google {
+  position: absolute;
+  bottom: 50px;
+  right: 37px;
+}
+
+#modal-cont .modal-content .modalcon .eye {
+  position: absolute;
+  right: 20px;
+  top: 135px;
+  left: auto;
 }
 
 #header {

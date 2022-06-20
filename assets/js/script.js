@@ -33,36 +33,21 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    // breakpoints: {
-    //   640: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 20,
-    //   },
-    //   768: {
-    //     slidesPerView: 4,
-    //     spaceBetween: 40,
-    //   },
-    //   1024: {
-    //     slidesPerView: 5,
-    //     spaceBetween: 50,
-    //   },
-    // },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
 
-  const burger=document.querySelector(".bi-menu-down");
+  const burger=document.querySelector(".burger");
   if(burger){
     burger.addEventListener("click", function () {
-        var mobilnav = document.querySelector("#mobilnav");
-        if (mobilnav.style.transform == "translateX(350px)") {
+        const mobilnav = document.querySelector(".lists");
+        if (mobilnav.style.transform == "translateX(-500px)") {
           mobilnav.style.transform = "translateX(0px)";
         }
-        else if (mobilnav.style.transform == "translateX(0px)") {
-          mobilnav.style.transform = "translateX(350px)";
+        else  {
+          mobilnav.style.transform = "translateX(-500px)";
         }
       })
   }
-  console.log(burger);
